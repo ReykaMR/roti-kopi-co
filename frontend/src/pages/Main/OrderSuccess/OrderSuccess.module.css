@@ -1,0 +1,65 @@
+.successPage {
+  padding: 3rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.successCard {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.successIcon {
+  color: var(--success-color);
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.orderDetails {
+  text-align: left;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.actionButton {
+  min-width: 150px;
+}
+
+.errorState {
+  padding: 3rem 0;
+}
+
+.errorState i {
+  color: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actionButton {
+    width: 100%;
+  }
+}

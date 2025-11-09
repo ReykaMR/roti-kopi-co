@@ -1,0 +1,98 @@
+.eventCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.eventCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.eventImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.eventCard:hover .eventImage {
+  transform: scale(1.05);
+}
+
+.eventOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(78, 52, 46, 0.95), transparent);
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+.eventTitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.eventPrice {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffcc80;
+  font-weight: 600;
+}
+
+.eventDescription {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.eventButton {
+  background-color: #ffcc80;
+  color: #4e342e;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.eventButton:hover {
+  background-color: #4e342e;
+  color: #f5e6d3;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .eventImage {
+    height: 250px;
+  }
+
+  .eventOverlay {
+    padding: 20px;
+  }
+
+  .eventTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .eventOverlay {
+    padding: 15px;
+  }
+
+  .eventTitle {
+    font-size: 1.3rem;
+  }
+
+  .eventDescription {
+    font-size: 0.9rem;
+  }
+}

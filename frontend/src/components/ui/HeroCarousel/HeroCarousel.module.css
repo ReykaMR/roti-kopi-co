@@ -1,0 +1,79 @@
+.carousel {
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+/* Custom styles for carousel indicators */
+.indicators {
+  margin-bottom: 20px;
+}
+
+.indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.indicators button.active {
+  background-color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.indicators button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Custom styles for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .indicators {
+    margin-bottom: 10px;
+  }
+
+  .indicators button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}

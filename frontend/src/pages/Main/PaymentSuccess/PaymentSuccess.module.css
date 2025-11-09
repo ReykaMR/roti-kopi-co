@@ -1,0 +1,147 @@
+.successPage {
+  padding: 2rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.successCard {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.successIcon {
+  color: var(--success-color, #28a745);
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.successTitle {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.successSubtitle {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.orderCard {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.orderCardTitle {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.orderDetails {
+  margin-bottom: 1rem;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.orderItems {
+  margin-top: 1rem;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.orderItem:last-child {
+  border-bottom: none;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemName {
+  font-weight: 500;
+}
+
+.itemQuantity {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.itemPrice {
+  font-weight: 500;
+}
+
+.instructions {
+  text-align: left;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.instructions h5 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.instructions ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.actionButton {
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .successCard {
+    padding: 1.5rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actionButton {
+    width: 100%;
+  }
+
+  .detailItem {
+    flex-direction: column;
+  }
+}

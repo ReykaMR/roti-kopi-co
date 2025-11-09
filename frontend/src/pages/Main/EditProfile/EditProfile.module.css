@@ -1,0 +1,13 @@
+.profileCard {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tabContent {
+  min-height: 300px;
+}
+
+.formLabel {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}

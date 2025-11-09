@@ -1,0 +1,36 @@
+.summaryCard {
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.summaryCard:hover {
+  transform: translateY(-5px);
+}
+
+.summaryNumber {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.metricLabel {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.metricValue {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+@media (max-width: 576px) {
+  .summaryNumber {
+    font-size: 1.5rem;
+  }
+}

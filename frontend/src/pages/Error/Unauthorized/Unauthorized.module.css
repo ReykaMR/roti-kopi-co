@@ -1,0 +1,36 @@
+.unauthorizedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.unauthorizedContent {
+  max-width: 500px;
+}
+
+.unauthorizedIcon {
+  font-size: 5rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.unauthorizedActions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .unauthorizedActions {
+    flex-direction: column;
+  }
+
+  .unauthorizedActions .btn {
+    width: 100%;
+  }
+}

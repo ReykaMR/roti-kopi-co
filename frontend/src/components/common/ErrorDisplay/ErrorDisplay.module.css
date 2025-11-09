@@ -1,0 +1,173 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 50vh; */
+  min-height: calc(100vh - 80px);
+  padding: 5rem;
+  background-color: var(--background-color);
+}
+
+.errorContent {
+  text-align: center;
+  max-width: 500px;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border-left: 5px solid var(--accent-color);
+}
+
+.errorIcon {
+  font-size: 4rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.errorTitle {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.errorMessage {
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.errorActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.retryButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.retryButton:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.homeButton {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.homeButton:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+/* Network Error Specific Styles */
+.networkError .errorIcon {
+  color: #dc3545;
+}
+
+.networkError .errorContent {
+  border-left-color: #dc3545;
+}
+
+/* Loading Error Specific Styles */
+.loadingError .errorIcon {
+  color: #ffc107;
+}
+
+.loadingError .errorContent {
+  border-left-color: #ffc107;
+}
+
+/* Not Found Error Specific Styles */
+.notFoundError .errorIcon {
+  color: #6c757d;
+}
+
+.notFoundError .errorContent {
+  border-left-color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .errorContent {
+    padding: 2rem 1.5rem;
+  }
+
+  .errorIcon {
+    font-size: 3rem;
+  }
+
+  .errorTitle {
+    font-size: 1.5rem;
+  }
+
+  .errorActions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .retryButton,
+  .homeButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .errorContainer {
+    padding: 1rem;
+  }
+
+  .errorContent {
+    padding: 1.5rem 1rem;
+  }
+
+  .errorTitle {
+    font-size: 1.3rem;
+  }
+
+  .errorMessage {
+    font-size: 1rem;
+  }
+}

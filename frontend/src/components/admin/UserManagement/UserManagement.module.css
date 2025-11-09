@@ -1,0 +1,25 @@
+.userCard {
+  transition: transform 0.2s;
+}
+
+.userCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.button:disabled {
+  background-color: #ad9c98;
+}
+
+@media (max-width: 768px) {
+  .actionButtons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

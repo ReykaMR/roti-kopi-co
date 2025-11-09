@@ -1,0 +1,15 @@
+.productImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.button:disabled {
+  background-color: #ad9c98;
+}
+
+@media (max-width: 768px) {
+  .productInfo {
+    text-align: center;
+  }
+}

@@ -1,0 +1,57 @@
+.categoryNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.categoryButton {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categoryButton:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.categoryButton.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.menuGrid {
+  margin-bottom: 2rem;
+}
+
+.button:disabled {
+  background-color: var(--faded-brown);
+}
+
+@media (max-width: 768px) {
+  .categoryNavigation {
+    gap: 0.25rem;
+  }
+
+  .categoryButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .categoryButton {
+    flex: 1;
+    min-width: 120px;
+    justify-content: center;
+  }
+}

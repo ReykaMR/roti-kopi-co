@@ -1,0 +1,257 @@
+.lead {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.tabNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.tabButton {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabButton:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.tabButton.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.tabContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tabContent h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.tabContent p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--accent-color);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  left: -2.4rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+}
+
+.timelineYear {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.timelineContent h4 {
+  color: var(--dark-brown);
+  margin-bottom: 0.5rem;
+}
+
+/* Vision & Mission Styles */
+.visionMission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.vision,
+.mission {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.vision h4,
+.mission h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.mission ul {
+  padding-left: 1.5rem;
+}
+
+.mission li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Food Safety Styles */
+.safetyStandards {
+  margin-top: 1.5rem;
+}
+
+.standard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.standard i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+/* Halal Certification Styles */
+.halalContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.halalLogo {
+  text-align: center;
+}
+
+.halalLogo img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 75%;
+}
+
+/* Contact Styles */
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contactItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.contactItem i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
+
+.contactItem h5 {
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.contactForm {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.contactForm h5 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.submitBtn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .visionMission,
+  .halalContent,
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabNavigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabButton {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .tabContainer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .discoverContainer {
+    padding-bottom: 2rem;
+  }
+
+  .tabContainer {
+    padding: 1rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timelineItem::before {
+    left: -1.9rem;
+  }
+}

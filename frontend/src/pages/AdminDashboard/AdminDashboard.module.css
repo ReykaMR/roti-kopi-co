@@ -1,0 +1,54 @@
+@import "../../styles/variables.css";
+
+.adminDashboard {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.statCard {
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Custom tab styles */
+.nav-tabs .nav-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  background: none;
+  border: none;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: var(--accent-color);
+}

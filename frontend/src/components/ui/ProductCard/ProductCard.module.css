@@ -1,0 +1,175 @@
+.productLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.productCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.productImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.05);
+}
+
+.productOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(78, 52, 46, 0.9), transparent);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.productTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.productDescription {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Styles untuk promo card */
+.promoCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+.promoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.promoImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.promoCard:hover .promoImage {
+  transform: scale(1.05);
+}
+
+.promoOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(78, 52, 46, 0.9), transparent);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.promoTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.promoDescription {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.promoPrice {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.discountPrice {
+  color: #ffcc80;
+  font-size: 1.1rem;
+}
+
+.promoBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 10;
+} 
+
+@media (max-width: 768px) {
+  .productImage {
+    height: 200px;
+  }
+
+  .promoImage {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .productOverlay {
+    padding: 15px;
+  }
+
+  .productTitle {
+    font-size: 1rem;
+  }
+
+  .productDescription {
+    font-size: 0.8rem;
+  }
+
+  .promoOverlay {
+    padding: 15px;
+  }
+
+  .promoTitle {
+    font-size: 1rem;
+  }
+
+  .promoDescription {
+    font-size: 0.8rem;
+  }
+
+  .originalPrice {
+    font-size: 0.8rem;
+  }
+
+  .discountPrice {
+    font-size: 1rem;
+  }
+}

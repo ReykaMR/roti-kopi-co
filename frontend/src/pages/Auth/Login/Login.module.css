@@ -1,0 +1,113 @@
+@import url("../../../styles/variables.css");
+
+.loginContainer {
+  background-color: var(--background-color);
+}
+
+.loginCard {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: none;
+}
+
+.loginLogo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.loginTitle {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+}
+
+.loginSubtitle {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.inputLabel {
+  color: var(--primary-color);
+}
+
+.formControl {
+  border-left: none;
+  transition: var(--transition);
+}
+
+.formControl:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.25rem rgba(255, 204, 128, 0.25);
+}
+
+.loginButton {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--text-light);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.loginButton:hover:not(:disabled) {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.loginButton:disabled {
+  background-color: var(--faded-brown);
+  border-color: var(--faded-brown);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.resendButton {
+  color: var(--accent-color) !important;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.resendButton:hover:not(:disabled) {
+  color: var(--primary-color) !important;
+}
+
+.resendButton:disabled {
+  color: var(--faded-brown) !important;
+  cursor: not-allowed;
+}
+
+.message {
+  border-radius: 8px;
+  border: none;
+}
+
+.copyright {
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .loginCard {
+    border-radius: 12px;
+  }
+
+  .loginLogo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .loginTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
