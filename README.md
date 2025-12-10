@@ -86,4 +86,4 @@ Sebelum memulai, pastikan telah menginstal:
 
 4. **Buka browser**
 
-   Buka http://localhost:5173
+   Buka di browser google chrome ataupun lainnya lalu ketik atau copy paste http://localhost:5173
