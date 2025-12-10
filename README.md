@@ -62,14 +62,14 @@ Sebelum memulai, pastikan telah menginstal:
 
 2. **Instal dependensi + Menjalankan server development**
 
-   1. Buka terminal untuk masuk ke dalam folder backend di visual studio code dengan menekan tombol (ctrl + `), lalu ketik:
+   Langkah 1. Buka terminal untuk masuk ke dalam folder backend di visual studio code dengan menekan tombol (ctrl + `), lalu ketik:
    ```bash
    cd ./backend/  // Masuk ke folder backend
    npm install    // Instal dependensi
    npm run dev    // Jalankan server
    ```
 
-   2. Tambah terminal baru untuk masuk ke dalam folder frontend di visual studio code dengan menekan tombol (ctrl + shift + `), lalu ketik:
+   Langkah 2. Tambah terminal baru untuk masuk ke dalam folder frontend di visual studio code dengan menekan tombol (ctrl + shift + `), lalu ketik:
    ```bash
    cd ./frontend/  // Masuk ke folder frontend
    npm install     // Instal dependensi
