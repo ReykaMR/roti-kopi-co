@@ -47,6 +47,8 @@ Platform F&B (Food & Beverage) yang dibangun menggunakan React dan Bootstrap 5 u
 
 Sebelum memulai, pastikan telah menginstal:
 
+[Visual Studio Code](https://code.visualstudio.com/download)
+[XAMPP](https://sourceforge.net/projects/xampp/files/) (v7.4.33)
 [Node.js](https://nodejs.org/) (v20.19.6 LTS atau yang lebih baru)
 
 ---
@@ -60,22 +62,28 @@ Sebelum memulai, pastikan telah menginstal:
    cd roti-kopi-co
    ```
 
-2. **Instal dependensi + Menjalankan server development**
+2. **Setup Database**
+   
+   - **Langkah 1:** Buka phpmyadmin
+   - **Langkah 2:** Buat database dengan nama roti_kopi_co
+   - **Langkah 3:** Import file roti_kopi_co (support semua versi mysql).sql
 
-   Langkah 1. Buka terminal untuk masuk ke dalam folder backend di visual studio code dengan menekan tombol (ctrl + `), lalu ketik:
+3. **Instal dependensi + Menjalankan server development**
+
+   **Langkah 1:** Buka terminal untuk masuk ke dalam folder backend di visual studio code dengan menekan tombol (ctrl + `), lalu ketik:
    ```bash
    cd ./backend/  // Masuk ke folder backend
    npm install    // Instal dependensi
    npm run dev    // Jalankan server
    ```
 
-   Langkah 2. Tambah terminal baru untuk masuk ke dalam folder frontend di visual studio code dengan menekan tombol (ctrl + shift + `), lalu ketik:
+   **Langkah 2:** Tambah terminal baru untuk masuk ke dalam folder frontend di visual studio code dengan menekan tombol (ctrl + shift + `), lalu ketik:
    ```bash
    cd ./frontend/  // Masuk ke folder frontend
    npm install     // Instal dependensi
    npm run dev     // Jalankan server
    ```
 
-3. **Buka browser**
+4. **Buka browser**
 
    Buka http://localhost:5173
