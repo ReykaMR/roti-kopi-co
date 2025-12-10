@@ -47,9 +47,9 @@ Platform F&B (Food & Beverage) yang dibangun menggunakan React dan Bootstrap 5 u
 
 Sebelum memulai, pastikan telah menginstal:
 
-[Visual Studio Code](https://code.visualstudio.com/download)
-[XAMPP](https://sourceforge.net/projects/xampp/files/) (v7.4.33)
-[Node.js](https://nodejs.org/) (v20.19.6 LTS atau yang lebih baru)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [XAMPP](https://sourceforge.net/projects/xampp/files/) (v7.4.33)
+- [Node.js](https://nodejs.org/) (v20.19.6 LTS atau yang lebih baru)
 
 ---
 
